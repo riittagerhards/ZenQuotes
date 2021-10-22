@@ -59,4 +59,11 @@ main {
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
   padding: 0 1rem 0 1rem;
+  margin-top: 2rem;
+}
+
+button {
+  margin-left: 10vw;
+  margin-right: 10vw;
+  width: 80vw;
 }
