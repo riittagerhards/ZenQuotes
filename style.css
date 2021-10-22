@@ -33,4 +33,22 @@ h3,
 h4,
 h5 {
   font-family: var(--font-family-headline);
+  color: var(--color-header-text);
+}
+
+header {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+  column-gap: 3rem;
+  align-items: center;
+  padding: 3rem;
+}
+
+.headerText {
+  font-size: 2rem;
+}
+
+.titlePic {
+  width: 10rem;
+  height: 10rem;
 }
