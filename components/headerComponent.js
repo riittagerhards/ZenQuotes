@@ -4,7 +4,7 @@ export function createHeaderElement() {
   const headerElement = createElement("header", {}, [
     createElement("img", {
       className: "titlePic",
-      src: "https://pic.onlinewebfonts.com/svg/img_313925.png",
+      src: "https://freesvg.org/img/Prismatic-Lotus-Flower-12-No-Background.png",
       alt: "",
     }),
 
@@ -16,3 +16,5 @@ export function createHeaderElement() {
 
   return headerElement;
 }
+
+// https://pic.onlinewebfonts.com/svg/img_313925.png

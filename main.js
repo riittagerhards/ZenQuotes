@@ -16,9 +16,11 @@ async function renderApp() {
   const quoteCards = quotes.map((quote) => createQuoteCard(quote));
 
   async function handleOnClick() {
-    const response = await fetch("https://zenquotes.io/api/random/");
+    const response = await fetch(
+      "https://cors.machens.koeln/https://zenquotes.io/api/random/"
+    );
     const random = await response.json();
-    createQuoteCard();
+    createQuoteCard(random);
     mainElement.innerHTML = "";
     mainElement.append(random);
   }

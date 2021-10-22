@@ -8,8 +8,8 @@
 
 :root {
   /* COLORS */
-  --color-header-text: #413e3e;
-  --color-main-text: #413e3e;
+  --color-header-text: #555454;
+  --color-main-text: #555454;
   --color-background-header: #fffffe;
   --color-background-main: #fffffe;
 
@@ -42,16 +42,16 @@ header {
   grid-template-columns: 10rem 1fr;
   column-gap: 3rem;
   align-items: center;
-  padding: 3rem;
+  padding: 0 1rem 0 1rem;
 }
 
 .headerText {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 .titlePic {
-  width: 10rem;
-  height: 10rem;
+  width: 12rem;
+  height: 12rem;
 }
 
 main {
@@ -66,4 +66,12 @@ button {
   margin-left: 10vw;
   margin-right: 10vw;
   width: 80vw;
+  background-color: #ebe1e3;
+  font-size: 1rem;
+  color: var(--color-header-text);
+  height: 2rem;
+  border-radius: 8px;
+  display: inline-block;
+  outline: 5px solid#ebe1e3;
+  border: 1px solid #fff;
 }
