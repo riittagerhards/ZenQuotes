@@ -20,7 +20,9 @@ async function renderApp() {
       "https://cors.machens.koeln/https://zenquotes.io/api/random/"
     );
     const random = await response.json();
+
     createQuoteCard(random);
+
     mainElement.innerHTML = "";
     mainElement.append(random);
   }

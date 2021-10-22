@@ -66,12 +66,12 @@ button {
   margin-left: 10vw;
   margin-right: 10vw;
   width: 80vw;
-  background-color: #ebe1e3;
+  background-color: #7c8183cb;
   font-size: 1rem;
   color: var(--color-header-text);
   height: 2rem;
   border-radius: 8px;
   display: inline-block;
-  outline: 5px solid#ebe1e3;
+  outline: 5px solid#7c8183cb;
   border: 1px solid #fff;
 }

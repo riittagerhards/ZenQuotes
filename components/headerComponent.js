@@ -4,7 +4,7 @@ export function createHeaderElement() {
   const headerElement = createElement("header", {}, [
     createElement("img", {
       className: "titlePic",
-      src: "https://freesvg.org/img/Prismatic-Lotus-Flower-12-No-Background.png",
+      src: "https://freesvg.org/img/Emerald-Lotus-Flower-No-Background.png",
       alt: "",
     }),
 
