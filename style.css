@@ -8,10 +8,10 @@
 
 :root {
   /* COLORS */
-  --color-header-text: #202329;
-  --color-main-text: #000;
-  --color-background-header: #fff;
-  --color-background-main: #fff;
+  --color-header-text: #413e3e;
+  --color-main-text: #413e3e;
+  --color-background-header: #fffffe;
+  --color-background-main: #fffffe;
 
   /* FONT */
   --font-family-headline: "Dancing Script", cursive;
@@ -37,8 +37,9 @@ h5 {
 }
 
 header {
+  background-color: var(--color-background-header);
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+  grid-template-columns: 10rem 1fr;
   column-gap: 3rem;
   align-items: center;
   padding: 3rem;
@@ -51,4 +52,11 @@ header {
 .titlePic {
   width: 10rem;
   height: 10rem;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  padding: 0 1rem 0 1rem;
 }
