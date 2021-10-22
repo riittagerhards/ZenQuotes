@@ -1,8 +1,36 @@
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto&display=swap");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+:root {
+  /* COLORS */
+  --color-header-text: #202329;
+  --color-main-text: #000;
+  --color-background-header: #fff;
+  --color-background-main: #fff;
+
+  /* FONT */
+  --font-family-headline: "Dancing Script", cursive;
+  --font-family-text: "Roboto", sans-serif;
+
+  /* BORDERS */
+  --border-radius: 15px;
+}
+
+body {
+  font-family: var(--font-family-text);
+  background-color: var(--color-background-main);
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: var(--font-family-headline);
 }
