@@ -19,12 +19,11 @@ async function renderApp() {
     const response = await fetch(
       "https://cors.machens.koeln/https://zenquotes.io/api/random/"
     );
-    const random = await response.json();
-
-    createQuoteCard(random);
+    const randomQuote = await response.json();
+    const randomCard = randomQuote.map((random) => createQuoteCard(random));
 
     mainElement.innerHTML = "";
-    mainElement.append(random);
+    mainElement.append(...randomCard);
   }
 
   const randomQuote = createButtonComponent(handleOnClick);
