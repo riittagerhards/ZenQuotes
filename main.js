@@ -4,16 +4,14 @@ import { createHeaderElement } from "./components/headerComponent.js";
 import createQuoteCard from "./components/quoteCard.js";
 import { createButtonComponent } from "./components/buttonRandomComponent.js";
 import { createScrollComponent } from "./components/buttonScrollComponent.js";
+import { fetchApi } from "./lib/api.js";
 
 async function renderApp() {
   const appElement = document.querySelector("#app");
 
   const headerElement = createHeaderElement();
 
-  const response = await fetch(
-    "https://cors.machens.koeln/https://zenquotes.io/api/quotes"
-  );
-  const quotes = await response.json();
+  const quotes = await fetchApi();
   const quoteCards = quotes.map((quote) => createQuoteCard(quote));
 
   async function handleOnSubmit() {
