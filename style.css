@@ -63,9 +63,10 @@ main {
 }
 
 button {
-  margin-left: 10vw;
-  margin-right: 10vw;
   width: 80vw;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: 10vw;
   background-color: #7c8183cb;
   font-size: 1rem;
   color: var(--color-header-text);
