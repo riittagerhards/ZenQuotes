@@ -11,9 +11,6 @@ async function renderApp() {
 
   const headerElement = createHeaderElement();
 
-  const quotes = await fetchApi();
-  const quoteCards = quotes.map((quote) => createQuoteCard(quote));
-
   async function handleOnSubmit() {
     const response = await fetch(
       "https://cors.machens.koeln/https://zenquotes.io/api/random/"
@@ -24,8 +21,10 @@ async function renderApp() {
     mainElement.innerHTML = "";
     mainElement.append(...randomCard);
   }
-
   const randomQuote = createButtonComponent(handleOnSubmit);
+
+  const quotes = await fetchApi();
+  const quoteCards = quotes.map((quote) => createQuoteCard(quote));
 
   const mainElement = createElement("main", { className: "main" }, quoteCards);
 

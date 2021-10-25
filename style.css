@@ -36,45 +36,10 @@ h5 {
   color: var(--color-header-text);
 }
 
-.header {
-  background-color: var(--color-background-header);
-  display: flex;
-  flex-wrap: wrap;
-  column-gap: 1.5rem;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 0 1rem 0 1rem;
-}
-
-.headerText {
-  font-size: 3rem;
-}
-
-.titlePic {
-  width: 12rem;
-  height: 12rem;
-}
-
 main {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   gap: 1rem;
   padding: 0 1rem 0 1rem;
   margin-top: 2rem;
-}
-
-button {
-  width: 80vw;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  margin-left: 10vw;
-  background-color: #7c8183cb;
-  font-size: 1rem;
-  color: var(--color-header-text);
-  height: 2rem;
-  border-radius: 8px;
-  display: inline-block;
-  outline: 5px solid#7c8183cb;
-  border: 1px solid #fff;
 }
