@@ -16,5 +16,3 @@ export function createHeaderElement() {
 
   return headerElement;
 }
-
-// https://pic.onlinewebfonts.com/svg/img_313925.png

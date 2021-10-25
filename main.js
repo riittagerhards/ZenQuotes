@@ -3,7 +3,7 @@ import { createElement } from "./lib/elements";
 import { createHeaderElement } from "./components/headerComponent.js";
 import createQuoteCard from "./components/quoteCard.js";
 import { createButtonComponent } from "./components/buttonRandomComponent.js";
-import { createScrollComponent } from "./components/buttonScrollComponent.js";
+import createScrollComponent from "./components/buttonScrollComponent.js";
 import { fetchApi } from "./lib/api.js";
 
 async function renderApp() {
@@ -29,14 +29,7 @@ async function renderApp() {
 
   const mainElement = createElement("main", { className: "main" }, quoteCards);
 
-  function handleOnClick() {
-    window.scrollTo({
-      top: 0,
-      left: 0,
-      behavior: "smooth",
-    });
-  }
-  const scrollButton = createScrollComponent(handleOnClick);
+  const scrollButton = createScrollComponent();
 
   appElement.append(headerElement, randomQuote, mainElement, scrollButton);
 }

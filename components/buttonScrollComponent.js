@@ -1,13 +1,12 @@
 import { createElement } from "../lib/elements";
 
-export function createScrollComponent(onClick) {
+export default function createScrollComponent() {
   const scrollButton = createElement("button", {
-    type: "submit",
     textContent: "Back to top ↑",
-    onclick: function (event) {
-      event.preventDefault();
-      onClick();
+    onclick: function () {
+      window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
     },
   });
-  return scrollButton;
+
+  return createElement("div", {}, [scrollButton]);
 }
