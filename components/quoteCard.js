@@ -9,5 +9,3 @@ export default function createQuoteCard({ q, a }) {
 
   return quoteCard;
 }
-
-//export default function createQuoteCard({ q, a }) {

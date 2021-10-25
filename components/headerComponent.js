@@ -1,15 +1,16 @@
 import { createElement } from "../lib/elements";
+import styles from "./header.module.css";
 
 export function createHeaderElement() {
-  const headerElement = createElement("header", {}, [
+  const headerElement = createElement("header", { className: styles.header }, [
     createElement("img", {
-      className: "titlePic",
-      src: "https://pic.onlinewebfonts.com/svg/img_313925.png",
+      className: styles.titlePic,
+      src: "https://freesvg.org/img/Emerald-Lotus-Flower-No-Background.png",
       alt: "",
     }),
 
     createElement("h1", {
-      className: "headerText",
+      className: styles.headerText,
       textContent: "Zen Quotes for Busy Coders",
     }),
   ]);
