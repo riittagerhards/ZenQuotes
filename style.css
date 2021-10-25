@@ -36,12 +36,14 @@ h5 {
   color: var(--color-header-text);
 }
 
-header {
+.header {
   background-color: var(--color-background-header);
-  display: grid;
-  grid-template-columns: 10rem 1fr;
+  display: flex;
+  flex-wrap: wrap;
   column-gap: 3rem;
   align-items: center;
+  justify-content: center;
+  text-align: center;
   padding: 0 1rem 0 1rem;
 }
 
