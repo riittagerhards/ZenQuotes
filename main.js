@@ -19,6 +19,7 @@ async function renderApp() {
     const randomCard = randomQuotes.map((random) => createQuoteCard(random));
 
     mainElement.innerHTML = "";
+    scrollButton.innerHTML = "";
     mainElement.append(...randomCard);
   }
   const randomQuote = createButtonComponent(handleOnSubmit);
